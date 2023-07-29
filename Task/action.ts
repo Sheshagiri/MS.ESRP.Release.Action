@@ -50,7 +50,7 @@ export async function run(this: any) {
 
             operationId = responseId 
         }).catch ((error) => {
-
+            console.log(error);
             console.log(ExceptionMessages.GatewayCallingExecutionFailed) 
             applicationInsights?.LogException(configManager.config!.RequestCorrelationId!, TrackingMessages.GatewayCallingExecutionException, error, TrackingMessages.ActionFile) 
             var finalError = new Error() 

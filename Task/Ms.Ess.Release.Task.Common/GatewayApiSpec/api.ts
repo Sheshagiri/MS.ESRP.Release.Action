@@ -12294,7 +12294,7 @@
       * @param {*} [options] Override http request options.
       */
      public releaseGetReleaseDetailsByReleaseIdAsync (operationid: string, clientid: string, version: string, options: any = {}) : Promise<{ response: http.IncomingMessage; body: MSEssGatewayClientContractsReleaseResponseReleaseDetailsMessage;  }> {
-         const localVarPath = this.basePath + '/api/v{version}/{clientid}/workflows/release/details/operations/{operationid}'
+         const localVarPath = this.basePath + '/api/v{version}/ReleaseServices/clients/{clientid}/workflows/release/operations/grd/{operationid}'
              .replace('{' + 'operationid' + '}', encodeURIComponent(String(operationid)))
              .replace('{' + 'clientid' + '}', encodeURIComponent(String(clientid)))
              .replace('{' + 'version' + '}', encodeURIComponent(String(version)));
@@ -12430,7 +12430,7 @@
       * @param {*} [options] Override http request options.
       */
      public releaseGetreleasestatus (operationid: string, clientid: string, version: string, options: any = {}) : Promise<{ response: http.IncomingMessage; body: MSEssGatewayClientContractsReleaseResponseReleaseResultMessage;  }> {
-         const localVarPath = this.basePath + '/api/v{version}/{clientid}/workflows/release/operations/{operationid}'
+         const localVarPath = this.basePath + '/api/v{version}/ReleaseServices/clients/{clientid}/workflows/release/operations/grs/{operationid}'
              .replace('{' + 'operationid' + '}', encodeURIComponent(String(operationid)))
              .replace('{' + 'clientid' + '}', encodeURIComponent(String(clientid)))
              .replace('{' + 'version' + '}', encodeURIComponent(String(version)));
@@ -12499,7 +12499,7 @@
       * @param {*} [options] Override http request options.
       */
      public releasePostRelease2Async (clientid: string, version: string, requestMessage?: MSEssGatewayClientContractsReleaseRequestReleaseRequestMessage, options: any = {}) : Promise<{ response: http.IncomingMessage; body: MSEssGatewayClientContractsOperationResponse;  }> {
-         const localVarPath = this.basePath + '/api/v{version}/{clientid}/workflows/release'
+         const localVarPath = this.basePath + '/api/v{version}/ReleaseServices/clients/{clientid}/workflows/release/operations'
              .replace('{' + 'clientid' + '}', encodeURIComponent(String(clientid)))
              .replace('{' + 'version' + '}', encodeURIComponent(String(version)));
          let localVarQueryParameters: any = {};

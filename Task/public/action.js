@@ -73,6 +73,7 @@ function run() {
             yield gatewayCommunicator.GatewayCalling().then((responseId) => {
                 operationId = responseId;
             }).catch((error) => {
+                console.log(error);
                 console.log(exceptionMessages_1.ExceptionMessages.GatewayCallingExecutionFailed);
                 applicationInsights === null || applicationInsights === void 0 ? void 0 : applicationInsights.LogException(configManager.config.RequestCorrelationId, trackingMessages_1.TrackingMessages.GatewayCallingExecutionException, error, trackingMessages_1.TrackingMessages.ActionFile);
                 var finalError = new Error();

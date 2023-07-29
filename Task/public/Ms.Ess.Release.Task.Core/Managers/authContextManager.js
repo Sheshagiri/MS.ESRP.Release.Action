@@ -38,6 +38,7 @@ class AuthenticationManager {
                 }
             };
             console.log(authorityUrl);
+            //console.log(clientConfig);
             const cca = new Msal.ConfidentialClientApplication(clientConfig);
             var gatewayScope = resourceUri + constants_1.Constant.APIAccessDefaultScope;
             const clientCredentialRequest = {

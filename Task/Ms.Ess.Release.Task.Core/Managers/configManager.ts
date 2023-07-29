@@ -57,6 +57,7 @@ export class ConfigManager{
         this.config.KVIdentityConfig= new KVIdentityConfig()
         
         if (this.config.Environment != undefined && this.config.Environment == Constant.Developer) {
+            console.log("running in debug mode");
             this.config.KVIdentityConfig.ClientId = core.getInput(ConfigKeys.KvClientId) 
             this.config.KVIdentityConfig.TenantId = core.getInput(ConfigKeys.KvTenantId ) 
             this.config.KVIdentityConfig.KeyVaultName = core.getInput(ConfigKeys.KvKeyVaultName ) 

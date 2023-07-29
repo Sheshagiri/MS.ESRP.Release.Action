@@ -62,6 +62,7 @@ class GatewayCaller {
             request = yield this.messageCreator.PopulateReleaseRequestMessage(containerSas).then();
             console.log(constants_1.Constant.GatewayRequestMessage);
             request.version = constants_1.Constant.VersionNumber3;
+            //console.log(JSON.stringify(request));
             var operationResponse = yield releaseApi.releasePostRelease2Async(this.config.ClientId, constants_1.Constant.VersionNumber3, request);
             var operationId = operationResponse.body.operationId;
             console.log(constants_1.Constant.GatewayResponseMessage + operationId + '\n');

@@ -10712,7 +10712,7 @@ class ReleaseApi {
      * @param {*} [options] Override http request options.
      */
     releaseGetReleaseDetailsByReleaseIdAsync(operationid, clientid, version, options = {}) {
-        const localVarPath = this.basePath + '/api/v{version}/{clientid}/workflows/release/details/operations/{operationid}'
+        const localVarPath = this.basePath + '/api/v{version}/ReleaseServices/clients/{clientid}/workflows/release/operations/grd/{operationid}'
             .replace('{' + 'operationid' + '}', encodeURIComponent(String(operationid)))
             .replace('{' + 'clientid' + '}', encodeURIComponent(String(clientid)))
             .replace('{' + 'version' + '}', encodeURIComponent(String(version)));
@@ -10838,7 +10838,7 @@ class ReleaseApi {
      * @param {*} [options] Override http request options.
      */
     releaseGetreleasestatus(operationid, clientid, version, options = {}) {
-        const localVarPath = this.basePath + '/api/v{version}/{clientid}/workflows/release/operations/{operationid}'
+        const localVarPath = this.basePath + '/api/v{version}/ReleaseServices/clients/{clientid}/workflows/release/operations/grs/{operationid}'
             .replace('{' + 'operationid' + '}', encodeURIComponent(String(operationid)))
             .replace('{' + 'clientid' + '}', encodeURIComponent(String(clientid)))
             .replace('{' + 'version' + '}', encodeURIComponent(String(version)));
@@ -10902,7 +10902,7 @@ class ReleaseApi {
      * @param {*} [options] Override http request options.
      */
     releasePostRelease2Async(clientid, version, requestMessage, options = {}) {
-        const localVarPath = this.basePath + '/api/v{version}/{clientid}/workflows/release'
+        const localVarPath = this.basePath + '/api/v{version}/ReleaseServices/clients/{clientid}/workflows/release/operations'
             .replace('{' + 'clientid' + '}', encodeURIComponent(String(clientid)))
             .replace('{' + 'version' + '}', encodeURIComponent(String(version)));
         let localVarQueryParameters = {};

@@ -27,7 +27,7 @@ inputs:
   ServiceEndpointUrl:
     description: "This is an auto populated field, which is used to submit request to ESRP Release Gateway."
     required: true
-    default: "https://api.esrp.microsoft.com"
+    default: "https://ppe.api.esrp.microsoft.com"
   MainPublisher:
     description: "This is an auto populated field based on the client id <-> main publisher mapping."
     required: true

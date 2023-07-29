@@ -80,6 +80,7 @@ class ConfigManager {
     setKVIdentityConfig() {
         this.config.KVIdentityConfig = new keyVaultIndentityConfig_1.KVIdentityConfig();
         if (this.config.Environment != undefined && this.config.Environment == constants_1.Constant.Developer) {
+            console.log("going into dev mode");
             this.config.KVIdentityConfig.ClientId = core.getInput(configKeys_1.ConfigKeys.KvClientId);
             this.config.KVIdentityConfig.TenantId = core.getInput(configKeys_1.ConfigKeys.KvTenantId);
             this.config.KVIdentityConfig.KeyVaultName = core.getInput(configKeys_1.ConfigKeys.KvKeyVaultName);
